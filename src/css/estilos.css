@@ -30,12 +30,10 @@ body {
     transition: 0.2s;
 }
 
-
 .cabecalho a:hover .logo {
     color: #9443d8;
     border: 2px solid #9443d8;
 }
-
 
 .cabecalho .menu li a {
     font-size: 20px;
@@ -56,7 +54,6 @@ body {
     align-items: center;
     gap: 50px;
     justify-content: space-between;
-
 }
 
 .home .informacoes {
@@ -83,7 +80,6 @@ body {
 .home .redes-sociais {
     display: flex;
     gap: 20px;
-
 }
 
 .home .redes-sociais a i {
@@ -164,18 +160,8 @@ body {
     bottom: 0;
 }
 
-.projetos .projetos .informacoes {
-    background-color: #040203;
-    font-size: small;
-    position: absolute;
-    top: 0;
-    height: 0;
-    height: 100%;
-    width: 100%;
-    font-weight: 600;
-    opacity: 0;
-    transition: 0.3s;
-    padding: 10px;
+.projetos .informacoes {
+    text-shadow: none !important; /* Remove qualquer sombra no texto das informações */
 }
 
 .projetos .projetos .informacoes:hover {
@@ -183,7 +169,7 @@ body {
     background-color: black;
 }
 
-.projetos .btn-mostrar-projetos{
+.projetos .btn-mostrar-projetos {
     background: none;
     border: 1px solid white;
     border-radius: 15px;
@@ -208,7 +194,7 @@ body {
     display: none;
 }
 
-.registrodemarca  {
+.registrodemarca {
     margin-bottom: -70px;
 }
 
@@ -224,4 +210,14 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* Estilo para aumentar a imagem nos projetos ao passar o mouse */
+.projetos .projeto img {
+    width: 100%;
+    transition: transform 0.3s ease; /* Efeito suave */
+}
+
+.projetos .projeto:hover img {
+    transform: scale(1.1); /* Aumenta a imagem em 10% */
 }
